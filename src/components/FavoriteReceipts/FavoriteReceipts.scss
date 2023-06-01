@@ -1,0 +1,85 @@
+.favorites-container {
+  max-width: 375px;
+  min-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #fafafa;
+  display: flex;
+  border: 1px solid red;
+  justify-content: center;
+}
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.favorite-item {
+position: relative;
+
+  background-color: orange;
+  padding: 14px 9px;
+  display: flex;
+  flex-wrap: wrap;
+
+  
+}
+
+.favorite-img-wrapper {
+  max-width: 124px;
+  max-height: 124px;
+  
+
+  height: 100%;
+  width: 100%;
+}
+.favorite-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.favorite-title {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 14px;
+/* identical to box height, or 100% */
+
+letter-spacing: -0.24px;
+
+/* Color - Text Primary */
+
+color: #3E4462;
+
+}
+.favorite-delete-btn {
+  position: absolute;
+  left: 310px;
+  top: 14px;
+  display: flex;
+  align-items: center;
+
+  background-color: #ebf3d4;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+.favorite-description {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 10px;
+/* or 125% */
+
+letter-spacing: -0.02em;
+
+color: #23262A;
+}
+.favorite-time {
+}
+.favorite-link {
+    position: absolute;
+}
