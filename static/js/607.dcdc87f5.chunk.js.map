@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/607.dcdc87f5.chunk.js","mappings":"2IAMA,UAJe,WACb,OAAO,gDACR,C","sources":["pages/Recipe.jsx"],"sourcesContent":["import React from 'react'\n\nconst Recipe = () => {\n  return <div>This is recipe page</div>;\n}\n\nexport default Recipe\n"],"names":[],"sourceRoot":""}
