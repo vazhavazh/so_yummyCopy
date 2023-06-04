@@ -1,8 +1,8 @@
 {
-  "name": "so_yummy",
+  "name": "so_yummyCopy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vazhavazh.github.io/so_yummy/",
+  "homepage": "https://vazhavazh.github.io/so_yummyCopy/",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
