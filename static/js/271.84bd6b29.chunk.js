@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkso_yummyCopy=self.webpackChunkso_yummyCopy||[]).push([[271],{271:function(u,s,e){e.r(s);e(791);var n=e(184);s.default=function(){return(0,n.jsx)("div",{})}}}]);
-//# sourceMappingURL=271.84bd6b29.chunk.js.map
