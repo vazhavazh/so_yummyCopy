@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import data from '../../api/fakeApi/fakeFavoriteDB.json'
-import './FavoriteReceipts.scss'
-import { ReactComponent as TrashIcon } from './trash.svg';
+import data from 'api/fakeApi/fakeFavoriteDB.json';
+import './FavoriteReceipts.scss';
+import { ReactComponent as TrashIcon } from 'assets/svg/favoritePage/trash.svg';
 
 export const FavoriteReceipts = () => {
-  const favorites = data
- console.log(data)
+  const favorites = data;
   return (
     <div className="favorites-container">
       <ul className="favorites-list">
@@ -15,18 +14,27 @@ export const FavoriteReceipts = () => {
             <div className="favorite-img-wrapper">
               <img src={favorite.preview} alt="food" className="favorite-img" />
             </div>
-            <h2 className="favorite-title">{favorite.title}</h2>
+
             <button
-              className="favorite-delete-btn"
+              className="favorite-delete-btn trashBtn"
               type="button"
               // onClick={() => handleDelete(favorite._id.$oid)}
             >
-              <TrashIcon />
+              <TrashIcon className="trashBtn--icon" />
             </button>
-            <p className="favorite-description">{favorite.description}</p>
-            <span className="favorite-time">{favorite.time}</span>
-            <Link className="favorite-link" to={`/recipe/${favorite._id.$oid}`}>
-              See recipe
+
+            <div className="favorite-description-wrapper">
+              <div>
+                <h2 className="favorite-title">{favorite.title}</h2>
+                <p className="favorite-description">{favorite.description}</p>
+              </div>
+              <span className="favorite-time">{favorite.time} min</span>
+            </div>
+            <Link
+              className="base-link-leaf favorite-link"
+              to={`/recipe/${favorite._id.$oid}`}
+            >
+              <span>See recipe</span>
             </Link>
           </li>
         ))}
